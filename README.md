@@ -1,1 +1,1 @@
-# terraform-azurerm-module-cyperf-app
+# module-cyperf-app/azurerm
