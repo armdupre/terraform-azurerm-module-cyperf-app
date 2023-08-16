@@ -1,4 +1,5 @@
 output "Eth0PublicIpAddress" {
+	description = "Public ip address resource associated with the first network interface"
 	value = {
 		"fqdn" : "https://${azurerm_public_ip.Eth0PublicIpAddress.fqdn}"
 		"ip_address" : azurerm_public_ip.Eth0PublicIpAddress.ip_address
@@ -6,6 +7,7 @@ output "Eth0PublicIpAddress" {
 }
 
 output "Instance" {
+	description = "Instance resource associated with the virtual machine"
 	value = {
 		"admin_username" : azurerm_linux_virtual_machine.Instance.admin_username
 		"computer_name" : azurerm_linux_virtual_machine.Instance.computer_name
@@ -23,6 +25,7 @@ output "Instance" {
 }
 
 output "MarketplaceAgreement" {
+	description = "Marketplace agreement associated with the vm image"
 	value = {
 		"offer" : data.azurerm_marketplace_agreement.MarketplaceAgreement.offer
 		"plan" : data.azurerm_marketplace_agreement.MarketplaceAgreement.plan
