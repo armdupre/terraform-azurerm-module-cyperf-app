@@ -34,7 +34,7 @@ variable "ImageSku" {
 }
 
 variable "ImageVersion" {
-	default = "0.2.5"
+	default = "0.2.6"
 	description = "The version number of an image SKU."
 	type = string
 }
@@ -112,7 +112,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "2-5"
+	default = "2-6"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
