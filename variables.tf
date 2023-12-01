@@ -28,13 +28,13 @@ variable "Eth0SubnetId" {
 }
 
 variable "ImageSku" {
-	default = "keysight-cyperf-controller-21"
+	default = "keysight-cyperf-controller-25"
 	description = "An instance of an offer, such as a major release of a distribution."
 	type = string
 }
 
 variable "ImageVersion" {
-	default = "0.2.6"
+	default = "0.2.5"
 	description = "The version number of an image SKU."
 	type = string
 }
@@ -112,7 +112,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "2-6"
+	default = "2-5"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
