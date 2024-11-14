@@ -24,6 +24,7 @@ resource "azurerm_linux_virtual_machine" "Instance" {
 	os_disk {
 		caching = "ReadWrite"
 		storage_account_type = "Standard_LRS"
+		disk_controller_type = "NVMe"
 	}
 	computer_name = replace(local.InstanceName, "_", "-")
 	admin_username = local.AdminUserName
