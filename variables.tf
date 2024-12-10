@@ -1,5 +1,5 @@
 variable "AdminUserName" {
-	default = "azure"
+	default = "cyperf"
 	description = "Id of the VM administrator account"
 	type = string
 }
